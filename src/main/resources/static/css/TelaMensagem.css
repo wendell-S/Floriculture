@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(to bottom, #FF007D, #FF355E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.caixa-mensagem {
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #B0FFB3, #1ED200);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+   .caixa-mensagem::before {
+              content: "";
+              background-image: url("png/fotoLove.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 280px;
+              height: 340px;
+              position: absolute;
+              top: 50%;
+              left: -370px;
+              transform: translateY(-50%);
+              border-radius: 15px;
+          }
+
+.caixa-mensagem input[type="text"],
+.caixa-mensagem textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.caixa-mensagem textarea {
+    resize: vertical;
+    height: 60px;
+}
+
+.caixa-mensagem input[type="submit"] {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.caixa-mensagem input[type="submit"]:hover {
+    background-color: #45a049;
+}
