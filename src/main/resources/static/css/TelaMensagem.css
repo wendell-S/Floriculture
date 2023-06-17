@@ -8,6 +8,24 @@ body {
     padding: 0;
     color: #fff;
     font-family: Arial, sans-serif;
+
+    background: linear-gradient(90deg, #ff001e, #9304a0);
+    background-size: 300% 300%;
+    animation: animation 3s infinite ease-in-out;
+}
+
+@keyframes animation{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .caixa-mensagem {
@@ -16,7 +34,7 @@ body {
     padding: 20px;
     border-radius: 15px;
     font-size: 16px;
-    background: linear-gradient(to bottom, #B0FFB3, #1ED200);
+    background: linear-gradient(to bottom, #ff8e04, #ff0000);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     position: relative;
 }
@@ -56,8 +74,18 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    
 }
 
 .caixa-mensagem input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.footer {
+    z-index: 1;
+    --footer-background:#000000;
+    display: grid;
+    position: relative;
+    grid-area:footer;
+    min-height: 12rem;
 }
