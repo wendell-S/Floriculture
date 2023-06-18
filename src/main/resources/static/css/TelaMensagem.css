@@ -9,9 +9,9 @@ body {
     color: #fff;
     font-family: Arial, sans-serif;
 
-    background: linear-gradient(90deg, #ff001e, #9304a0);
+    background: linear-gradient(90deg, #000000, #732e91);
     background-size: 300% 300%;
-    animation: animation 3s infinite ease-in-out;
+    animation: animation 7s infinite ease-in-out;
 }
 
 @keyframes animation{
@@ -32,27 +32,33 @@ body {
     width: 400px;
     max-width: 100%;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 16px;
-    background: linear-gradient(to bottom, #ff8e04, #ff0000);
+    background: linear-gradient(to bottom, #b131db, #3924da);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     position: relative;
+    
 }
-   .caixa-mensagem::before {
-              content: "";
-              background-image: url("png/fotoLove.jpg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              width: 280px;
-              height: 340px;
-              position: absolute;
-              top: 50%;
-              left: -370px;
-              transform: translateY(-50%);
-              border-radius: 15px;
-          }
+.caixa-mensagem::before {
+content: "";
+background-image: url("png/fotoLove.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+width: 280px;
+height: 340px;
+position: absolute;
+top: 50%;
+left: -230px;
+transform: translateY(-50%);
+border-radius: 15px;
+background-color: transparent;
+width: 190px;
+height: 254px;
+perspective: 1000px;
+}
 
 .caixa-mensagem input[type="text"],
+
 .caixa-mensagem textarea {
     width: 100%;
     padding: 5px;
@@ -60,25 +66,74 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-.caixa-mensagem textarea {
-    resize: vertical;
-    height: 60px;
-}
-
-.caixa-mensagem input[type="submit"] {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
+.input {
     border: none;
-    border-radius: 5px;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #000000;
+  }
+
+
+
+
+button {
+    width: 165px;
+    height: 62px;
     cursor: pointer;
-    font-size: 16px;
-    
-}
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+  }
+  
+  button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  button:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    transition: 0.5s;
+  }
+ 
+  
+  .codepen-button span {
+    position: relative;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    background: #000;
+    border-radius: 3px;
+    height: 100%;
+  }
+
+
+
+
 
 .caixa-mensagem input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #444444;
 }
 
 .footer {
@@ -88,4 +143,47 @@ body {
     position: relative;
     grid-area:footer;
     min-height: 12rem;
+}
+
+.custum-file-upload {
+  height: 100px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #cacaca;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 80px;
+  fill: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload input {
+  display: none;
 }
