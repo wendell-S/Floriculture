@@ -1,32 +1,65 @@
 body {
-    background: linear-gradient(to bottom, #FF007D, #FF91B4);
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(to bottom, #FF007D, #FF355E);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
     font-family: Arial, sans-serif;
+
+    background: linear-gradient(90deg, #000000, #732e91);
+    background-size: 300% 300%;
+    animation: animation 7s infinite ease-in-out;
 }
 
-.container {
+@keyframes animation{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: -400px;
 }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
+header h1 {    
+font-size: 32px;
+margin-bottom: 20px;
+color: #FFF;
+align-items: center;
+font-family: 'Poppins', sans-serif;;
+}
+
+header h2 {
+    font-size: 15px;
     color: #FFF;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .options {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    text-align: left;
+    text-align: center;
     margin-left: -300px;
     margin-top: 50px;
 }
