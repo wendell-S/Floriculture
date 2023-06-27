@@ -14,10 +14,10 @@ public class MessageController {
 
     private List<Message> messages = new ArrayList<>();
 
-    @PostMapping("api/messages")
+    @PostMapping("/api/messages")
     public void saveMessage(@RequestBody Message message){
         messages.add(message);
-     //  sendEmail(message);
+     // sendEmail(message);
         System.out.println("enviado!");
     }
     @GetMapping("/api/messages")
@@ -38,7 +38,7 @@ public class MessageController {
         properties.put("mail.smtp.ssl.trust", "*");
 
         String username = "botinterprise@gmail.com";
-        String password = "eurekwvpctdrcqfy";
+        String password = "ucjrcovndnofalxa";
 
         Session session = Session.getInstance(properties, new Authenticator() {
             @Override

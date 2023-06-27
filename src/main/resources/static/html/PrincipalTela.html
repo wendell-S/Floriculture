@@ -7,30 +7,25 @@
   <link rel="stylesheet" href="../css/PrincipalTela.css">
 </head>
 <body>
-  <header>
-
+<header>
   <h1>seja bem-vindo(a)</h1>
-  
   <h2>seleciona seu campo, faça download e mande sua flor cybernetica!</h2>
-  </header>
+</header>
 
 <div class="container">
-
   <div class="botoes">
-
     <div class="option">
-      
-      <a href="#" id="ver-flor-btn">Ver flores disponíveis</a>
+      <form action="/ver-flores" method="get">
+        <button type="submit">Ver flores disponíveis</button>
+      </form>
     </div>
 
     <div class="option">
-      <a href="#" id="enviar-flor-btn">Enviar uma flor</a>
+      <form action="/mandar-flor" method="get">
+        <button type="submit">Enviar uma flor</button>
+      </form>
     </div>
   </div>
 </div>
-
-<script src="../js/PrincipalTela.js"></script>
-<script src="../js/TelaFlores.js"></script>
-
 </body>
 </html>
