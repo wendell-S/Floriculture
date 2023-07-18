@@ -6,12 +6,17 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    color: #fff;
-    font-family: Arial, sans-serif;
-
+    
+    
     background: linear-gradient(90deg, #000000, #732e91);
     background-size: 300% 300%;
     animation: animation 7s infinite ease-in-out;
+}
+
+header {
+    background-color: #FFF;
+    
+    
 }
 
 @keyframes animation{
@@ -27,14 +32,14 @@ body {
         background-position: 0 50%;
     }
 }
-header {
+.titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: -400px;
 }
 
-header h1 {    
+.titulo h1 {    
 font-size: 32px;
 margin-bottom: 20px;
 color: #FFF;
@@ -42,26 +47,27 @@ align-items: center;
 font: arial;
 }
 
-header h2 {
+section {
+    
+}
+.titulo h2 {
     font-size: 15px;
     color: #FFF;
     margin-bottom: 20px;
     align-items: center;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
 
 .botoes  {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: center;
-    margin-left: -480px;
-    margin-top: 50px;
+    background-color: #000000af;
+    color: #FFF;
+    margin: auto;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
 }
 
 button {
