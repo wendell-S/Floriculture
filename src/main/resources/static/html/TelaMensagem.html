@@ -11,6 +11,20 @@
 </head>
 
 <body>
+<div id="app">
+    <div class="profile-icon" @click="toggleMenu"></div>
+    <div class="menu-container" :class="{ 'active': isMenuOpen }">
+        <ul>
+            <li @click="redirectTo('/floricultura/mandar-flor')"><a href="#">Enviar Mensagem</a></li>
+            <li @click="redirectTo('/floricultura/ver-flores')"><a href="#">Ver Flores</a></li>
+            <li @click="redirectTo('/floricultura/login')"><a href="#">Sair</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="../js/screenPrincipal.js"></script>
 <div class="caixa-mensagem">
     <form id="formulario">
         <input class="input" type="text" id="assunto" autocomplete="off" name="text" placeholder="Digite o assunto">

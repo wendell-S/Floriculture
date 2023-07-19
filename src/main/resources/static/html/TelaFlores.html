@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="/css/TelaFlores.css" >
-    <link rel="stylesheet" href="/src/main/resources/static/css/TelaFlores.css" > <!--testar adaptaçao de 2 fatores-->
+    <link rel="stylesheet" href="../css/TelaFlores.css" > <!--testar adaptaçao de 2 fatores-->
   
 </head>
 <body>
+
+<div id="app">
+    <div class="profile-icon" @click="toggleMenu"></div>
+    <div class="menu-container" :class="{ 'active': isMenuOpen }">
+        <ul>
+            <li @click="redirectTo('/floricultura/mandar-flor')"><a href="#">Enviar Mensagem</a></li>
+            <li @click="redirectTo('/floricultura/ver-flores')"><a href="#">Ver Flores</a></li>
+            <li @click="redirectTo('/floricultura/login')"><a href="#">Sair</a></li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="../js/screenPrincipal.js"></script>
 
 <div class="card">
     <div class="card1">

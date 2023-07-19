@@ -1,31 +1,37 @@
 package com.floriculture.controller;
 
 
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.mail.*;
-import javax.mail.internet.*;
-import java.util.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 
 
 @RestController
+
 public class MessageController {
 
-    private List<Message> messages = new ArrayList<>();
+    private List<com.floriculture.Message> messages = new ArrayList<>();
 
     @PostMapping("/api/messages")
-    public void saveMessage(@RequestBody Message message){
+    public void saveMessage(@RequestBody com.floriculture.Message message){
         messages.add(message);
      // sendEmail(message);
         System.out.println("enviado!");
     }
     @GetMapping("/api/messages")
-    public List<Message> getMessages() {
+    public List<com.floriculture.Message> getMessages() {
         return messages;
     }
 
-    private void sendEmail(Message message) {
+    private void sendEmail(com.floriculture.Message message) {
         String to = message.getEmail();
         String subject = message.getAssunto();
         String text = message.getMensagem();

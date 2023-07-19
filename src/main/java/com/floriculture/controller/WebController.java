@@ -4,20 +4,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/floricultura")
 public class WebController {
     
-    @RequestMapping("/mensagem")
-    public String exibirPagina() {
-        return "html/PrincipalTela.html";
-    }
+
 
     @RequestMapping("/ver-flores")
-    public String exibirPaginaVerFlores() {
+    public String showPaginaVerFlores() {
         return "html/TelaFlores.html";
     }
 
     @RequestMapping("/mandar-flor")
-    public String exibirPaginaMandarFlor() {
+    public String showPaginaMandarFlor() {
         return "html/TelaMensagem.html";
     }
+
+
+
 }

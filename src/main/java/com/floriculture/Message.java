@@ -1,4 +1,4 @@
-package com.floriculture.controller;
+package com.floriculture;
 
 public class Message {
     private String email;
