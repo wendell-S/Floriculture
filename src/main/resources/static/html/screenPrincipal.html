@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil com Menu Lateral</title>
     <link rel="stylesheet" href="../css/screenPrincipal.css">
+    <link rel="stylesheet" href="/src/main/resources/static/css/login.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-inner">
+            <div class="user-links">
+                <span>Ainda não tem uma conta?</span>
+                <div id="successMessage"></div>
+                <a class="link link-clean" href="/floricultura/registration">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+
 <div id="app">
     <div class="profile-icon" @click="toggleMenu"> <img src="/icone.png" alt="icon" height="50px"></div>
     <div class="menu-container" :class="{ 'active': isMenuOpen }" >
@@ -15,15 +25,15 @@
         <ul>
             <li @click="redirectTo('/floricultura/mandar-flor')"><a href="/src/main/resources/static/html/TelaMensagem.html"><strong> Mensagem</strong></a></li>
             <li @click="redirectTo('/floricultura/ver-flores')"><a href="/src/main/resources/static/html/TelaFlores.html"><strong>Ver Flores</strong></a></li>
-            <li @click="redirectTo('')"><a href="#"><strong>informações do perfil</strong></a></li>
-            <li @click="redirectTo('')"><a href="#"><strong>Sobre nós</strong></a></li>
+            <li @click="redirectTo('/floricultura/perfil')"><a href="/src/main/resources/static/html/TelaPerfil.html"><strong>informações do perfil</strong></a></li>
+            <li @click="redirectTo('/floricultura/sobre-Nos')"><a href="/src/main/resources/static/html/sobreNos.html"><strong>Sobre nós</strong></a></li>
             <li @click="redirectTo('/floricultura/login')"><a href="/src/main/resources/static/html/login.html"><strong>Sair</strong></a></li>
 
         </ul>
     </div>
 </div>
 
-</header>
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 <script src="../js/screenPrincipal.js"></script>
 </body>

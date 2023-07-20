@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="../css/TelaFlores.css" > <!--testar adaptaçao de 2 fatores-->
-  
+    <title>sobre nois</title>
+    <link rel="stylesheet" href="/src/main/resources/static/css/sobreNois.css">
 </head>
 <body>
-
     <div id="app">
         <div class="profile-icon" @click="toggleMenu"> <img src="/icone.png" alt="icon" height="50px"></div>
         <div class="menu-container" :class="{ 'active': isMenuOpen }" >
@@ -24,46 +22,11 @@
         </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-<script src="../js/screenPrincipal.js"></script>
+    <section class="container">
 
-<div class="card">
-    <div class="card1">
-        <img src="../css/png/flor-sem-fundo.png">
-        <div class="content">
-            <p class="title">rosa red puro<br></p>
-        </div>
-    </div>
-</div>
+    </section>
 
-<div class="card">
-    <div class="card2">
-        <img src="../css/png/flor1.jpg">
-        <div class="content">
-            <p class="title">rosa impecável<br></p>
-        </div>
-    </div>
-</div>
-
-<div class="card">
-    <div class="card3">
-        <img src="../css/png/images.jpg">
-        <div class="content">
-            <p class="title">Violeta<br></p>
-        </div>
-    </div>
-</div>
-
-<div class="card">
-    <div class="card4">
-        <img src="../css/png/images (1).jpg">
-        <div class="content">
-            <p class="title">pupilas<br></p>
-        </div>
-    </div>
-</div>
-
-<script src="../js/TelaFlores.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="../js/screenPrincipal.js"></script>
 </body>
 </html>

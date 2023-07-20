@@ -12,13 +12,14 @@
 
 <body>
 <div id="app">
-    <div class="profile-icon" @click="toggleMenu"></div>
+    <div class="profile-icon" @click="toggleMenu"> <img src="/icone.png" alt="icon" height="50px"></div>
     <div class="menu-container" :class="{ 'active': isMenuOpen }">
         <ul>
-            <li @click="redirectTo('/floricultura/mandar-flor')"><a href="#">Enviar Mensagem</a></li>
-            <li @click="redirectTo('/floricultura/ver-flores')"><a href="#">Ver Flores</a></li>
-            <li @click="redirectTo('/floricultura/login')"><a href="#">Sair</a></li>
-
+            <li @click="redirectTo('/floricultura/mandar-flor')"><a href="/src/main/resources/static/html/TelaMensagem.html">Enviar Mensagem</a></li>
+            <li @click="redirectTo('/floricultura/ver-flores')"><a href="/src/main/resources/static/html/TelaFlores.html">Ver Flores</a></li>
+            <li @click="redirectTo('/floricultura/sobre-Nos')"><a href="/src/main/resources/static/html/sobreNos.html"><strong>Sobre nós</strong></a></li>
+            <li @click="redirectTo('/floricultura/login')"><a href="/src/main/resources/static/html/login.html">Sair</a></li>
+            <li @click="redirectTo('/floricultura/Perfil')"><a href="/src/main/resources/static/html/TelaPerfil.html"><strong>informações do perfil</strong></a></li>
         </ul>
     </div>
 </div>
