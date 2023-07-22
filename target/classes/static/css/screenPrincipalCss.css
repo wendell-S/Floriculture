@@ -28,11 +28,6 @@ body {
     }
 }
 
-.header {
-  
-  background-color: #000;
-}
-
 .caixa-mensagem {
   width: 400px;
   max-width: 100%;
@@ -205,7 +200,7 @@ body {
 
 .profile-icon img {
   position: fixed;
-  top: 10px;
+  top: 20px;
   right: 20px;
   height: 60px;
   border-radius: 50%;
@@ -271,4 +266,4 @@ body {
   margin-left: auto;
   margin-right:auto
 }
-
+.box-content .login-options{altura:22px;line-height:22px}.box-content .login-options .link{float:right;text-align:right;font- size:1.5em;font-weight:400;margin-right:1px}.footer{background:#f5f5f5}@media screen and (max-width:500px){.box-content .btn-social-container{flex- direção:coluna}.box-content .btn-social{flex:1 1 auto;width:100%}}@media screen and (max-width:445px){.header .user-links span{display:none}. box-content{largura:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.box-content .login-options{margin- principal:16px}.checkbox-container,.radio-container{margin:0 auto;width:180px}.box-content .login-options .link{display:block;text-align:center;float:none;clear:both} }
