@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="page-basic" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="version" content="2.9.7-02">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://d1fuainj13qzhu.cloudfront.net/2.9.7/css/main.css">
+    <link rel="stylesheet" href="https://d1fuainj13qzhu.cloudfront.net/2.9.7/css/pages/register.css">
+    <link rel="stylesheet" type="text/css" href="/css/registration.css">
+    <script th:if="${errorMessage}" src="/js/registration.js"></script>
+
+</head>
+<body>
+<div class="page-basic-wrapper">
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo-container"></div>
+            <div class="user-links">
+                <span>Já tem uma conta?</span> <a class="link link-clean" href="/floricultura/login">Faça login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-basic-content">
+        <div class="box-content">
+            <h1>Forneça os dados</h1>
+            <div class="hr-bar choice">
+            </div>
+
+            <form th:action="@{/floricultura/registration}" method="post">
+                <div class="input-text-container">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="input-text-container">
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input-text-container">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="input-text-container">
+                    <label for="last_name"></label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Digite seu sobrenome" required>
+                </div>
+                <div>
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário">
+                </div>
+
+                <button id="btnEfetuarCadastrar" class="btn btn-big btn-green" type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="errorMessage" th:if="${errorMessage}" style="display: none;">
+    [[${errorMessage}]]
+</div>
+<div id="successMessage" th:if="${successMessage}" style="display: none;">
+    [[${successMessage}]]
+</div>
+</body>
+</html>

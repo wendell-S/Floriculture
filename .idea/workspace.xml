@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3862d4e1-7614-41e0-9299-8a02e677e1d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/DataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/SpringSecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/controllers/AdmSendFlowerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/controllers/MandarFlorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/controllers/PerfilController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/controllers/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/controllers/SobreNosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/controllers/VerFloresController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/controllers/screenPrincipalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floriculture/services/SSUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/aboutUsCss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/flowerScreenCss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/messageScreenCss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/png/flor-sem-fundo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/png/flor1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/png/fotoLove.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/png/icone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/png/images (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/png/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/png/registrationCss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/profileScreenCss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/registrationCss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/screenPrincipalCss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/flowerScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/screenPrincipal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/aboutUs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/adminSendFlower.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/flowerScreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/messageScreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/profileScreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/screenPrincipal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/floriculture/SpringSecurityApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2SrgW1fRhDlz5ph6j56QmPPSYE0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/igorc/IdeaProjects/Floriculture-Java11/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\igorc\IdeaProjects\Floriculture-Java11\src\main\resources" />
+      <recent name="C:\Users\igorc\IdeaProjects\Floriculture-Java11\src\main\resources\static" />
+      <recent name="C:\Users\igorc\IdeaProjects\Floriculture-Java11" />
+      <recent name="C:\Users\igorc\IdeaProjects\Floriculture-Java11\target" />
+      <recent name="C:\Users\igorc\IdeaProjects\Floriculture-Java11\src\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\igorc\IdeaProjects\Floriculture-Java11\src\main\resources\templates" />
+      <recent name="C:\Users\igorc\IdeaProjects\Floriculture-Java11\src\main\resources\static\css\png" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.floricultura.controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Floriculture" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Floriculture" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3862d4e1-7614-41e0-9299-8a02e677e1d8" name="Changes" comment="" />
+      <created>1689910145528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689910145528</updated>
+    </task>
+    <servers />
+  </component>
+</project>
