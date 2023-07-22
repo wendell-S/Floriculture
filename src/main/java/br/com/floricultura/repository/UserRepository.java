@@ -1,8 +1,10 @@
-package br.com.floriculture.repository;
+package br.com.floricultura.repository;
 
-import br.com.floriculture.model.User;
+import br.com.floricultura.model.User;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface UserRepository extends CrudRepository <User, Long> {
     User findByUsername(String username);
 }

@@ -1,4 +1,4 @@
-package br.com.floriculture.controllers;
+package br.com.floricultura.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

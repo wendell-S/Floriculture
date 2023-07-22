@@ -1,6 +1,6 @@
-package br.com.floriculture.controllers;
+package br.com.floricultura.controllers;
 
-import br.com.floriculture.repository.UserRepository;
+import br.com.floricultura.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

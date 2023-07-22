@@ -1,4 +1,4 @@
-package br.com.floriculture.model;
+package br.com.floricultura.model;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

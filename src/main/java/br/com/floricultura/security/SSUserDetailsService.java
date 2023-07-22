@@ -1,8 +1,8 @@
-package br.com.floriculture.services;
+package br.com.floricultura.security;
 
-import br.com.floriculture.model.Role;
-import br.com.floriculture.model.User;
-import br.com.floriculture.repository.UserRepository;
+import br.com.floricultura.model.Role;
+import br.com.floricultura.model.User;
+import br.com.floricultura.repository.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,7 +1,7 @@
-package br.com.floriculture;
+package br.com.floricultura.security;
 
-import br.com.floriculture.repository.UserRepository;
-import br.com.floriculture.services.SSUserDetailsService;
+import br.com.floricultura.repository.UserRepository;
+import br.com.floricultura.security.SSUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

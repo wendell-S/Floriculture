@@ -1,6 +1,4 @@
-package br.com.floriculture.model;
-
-import br.com.floriculture.model.User;
+package br.com.floricultura.model;
 
 import javax.persistence.*;
 import java.util.Collection;
