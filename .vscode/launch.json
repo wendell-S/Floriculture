@@ -9,6 +9,16 @@
             "projectName": "fragments",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringSecurityApplication<fragments>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.floricultura.SpringSecurityApplication",
+            "projectName": "fragments",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
