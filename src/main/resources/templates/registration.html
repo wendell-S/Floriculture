@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://d1fuainj13qzhu.cloudfront.net/2.9.7/css/main.css">
     <link rel="stylesheet" href="https://d1fuainj13qzhu.cloudfront.net/2.9.7/css/pages/register.css">
     <link rel="stylesheet" type="text/css" href="/css/registration.css">
-    <script th:if="${errorMessage}" src="/js/registration.js"></script>
 
 </head>
 <body>
@@ -55,12 +54,6 @@
             </form>
         </div>
     </div>
-</div>
-<div id="errorMessage" th:if="${errorMessage}" style="display: none;">
-    [[${errorMessage}]]
-</div>
-<div id="successMessage" th:if="${successMessage}" style="display: none;">
-    [[${successMessage}]]
 </div>
 </body>
 </html>

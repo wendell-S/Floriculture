@@ -1,7 +1,6 @@
 package br.com.floricultura.security;
 
 import br.com.floricultura.repository.UserRepository;
-import br.com.floricultura.security.SSUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -41,7 +40,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             "/floricultura/sobre-Nos",
             "/floricultura/registration",
             "/floricultura/mensagem",
-            "/floricultura/admin"
+            "/floricultura/admin",
+            "/floricultura/api/flowers"
 
     };
 

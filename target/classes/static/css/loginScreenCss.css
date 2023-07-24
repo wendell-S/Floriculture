@@ -10,8 +10,8 @@ body {
     background: linear-gradient(90deg, #000000, #ab34de);
     background-size: 300% 300%;
     animation: animation 7s infinite ease-in-out;
-    
 }
+
 @keyframes animation{
     0%{
         background-position: 0 50%;
@@ -25,43 +25,42 @@ body {
         background-position: 0 50%;
     }
 }
-  
+
 .header {
     background-color: #000000c4;
     color: #fff;
     padding: 25px;
     border: 2px solid #000000;
-  }
-  
+}
+
 .header-inner {
     max-width: 960px;
     margin: 0 auto;
-  }
-  
+}
+
 .user-links {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
-  }
-  
+}
+
 .user-links span {
     margin-right: 10px;
-  }
-  
+}
+
 .user-links a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  /* caixa de login */
+}
+
+/* caixa de login */
 .page-basic-content {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
-  }
-  
+}
+
 .box-content {
     background-color: #6237ff;
     border: 5px solid #ccccccac;
@@ -69,23 +68,23 @@ body {
     padding: 20px;
     max-width: 400px;
     width: 100%;
-  }
-  
+}
+
 h1 {
     text-align: center;
     font-size: 2.5rem;
     color: #ffffff;
-  }
-  
+}
+
 .input-text-container {
     margin-bottom: 15px;
-  }
-  
+}
+
 .input-text-container label {
     display: block;
     font-size: 1.2rem;
-  }
-  
+}
+
 input[type="text"],
 input[type="password"] {
     width: 95%;
@@ -93,8 +92,8 @@ input[type="password"] {
     padding: 5px 10px;
     border: 3px solid #28282884;
     border-radius: 5px;
-  }
-  
+}
+
 button {
     display: block;
     width: 100%;
@@ -107,28 +106,26 @@ button {
     cursor: pointer;
     margin-top: 10px;
     transition: background-color 0.2s ease;
-    }
-    
+}
+
 button:hover {
     background-color: #8f1bc8;
 }
-    
+
 button:active {
     background-color: #6a0e8f;
 }
-  
-  /* Checkbox  */
+
+/* Checkbox  */
 .checkbox-container {
     margin-top: 15px;
-  }
-  
+}
+
 .checkbox-container label {
     display: flex;
     align-items: center;
-  }
-  
+}
+
 .checkbox-container input[type="checkbox"] {
     margin-right: 5px;
-  }
-  
-            
+}

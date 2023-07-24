@@ -1,21 +1,18 @@
 package br.com.floricultura.controllers;
 
-import br.com.floricultura.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
 @RequestMapping("/floricultura")
 public class LoginController {
 
-    @Autowired
-    private UserRepository userRepository;
-
-    @RequestMapping("/login")
-    public String showPaginaLogin() {
-        return "login";
+    @GetMapping("/login")
+    public ModelAndView showRegistration(){
+        return new ModelAndView("login");
     }
 
 }

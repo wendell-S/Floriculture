@@ -1,69 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="/css/flowerScreenCss.css" > <!--testar adaptaçao de 2 fatores-->
-  
+    <link rel="stylesheet" href="/css/flowerScreenCss.css"> <!--testar adaptaçao de 2 fatores-->
+
 </head>
 <body>
 
-    <div id="app">
-        <div class="profile-icon" @click="toggleMenu"> <img src="/css/png/icone.png" alt="icon" height="50px"></div>
-        <div class="menu-container" :class="{ 'active': isMenuOpen }" >
-            
-            <ul>
-                <li @click="redirectTo('/floricultura/mensagem')"><a ><strong>Menu Principal</strong></a></li>
-                <li @click="redirectTo('/floricultura/mandar-flor')"><a ><strong>Mandar um email</strong></a></li>
-                <li @click="redirectTo('/floricultura/perfil')"><a ><strong>informações do perfil</strong></a></li>
-                <li @click="redirectTo('/floricultura/sobre-Nos')"><a ><strong>Sobre nós</strong></a></li>
-                <li @click="redirectTo('/floricultura/logout')"><a ><strong>Sair</strong></a></li>
+<div id="app">
+    <div class="profile-icon" @click="toggleMenu"> <img src="/css/png/icone.png" alt="icon" height="50px"></div>
+    <div class="menu-container" :class="{ 'active': isMenuOpen }" >
 
-            </ul>
-        </div>
+        <ul>
+            <li @click="redirectTo('/floricultura/mensagem')"><a ><strong>Menu Principal</strong></a></li>
+            <li @click="redirectTo('/floricultura/mandar-flor')"><a ><strong>Mandar um email</strong></a></li>
+            <li @click="redirectTo('/floricultura/perfil')"><a ><strong>informações do perfil</strong></a></li>
+            <li @click="redirectTo('/floricultura/sobre-Nos')"><a ><strong>Sobre nós</strong></a></li>
+            <li @click="redirectTo('/floricultura/logout')"><a ><strong>Sair</strong></a></li>
+        </ul>
     </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 <script src="/js/screenPrincipal.js"></script>
 
-<div class="card">
-    <div class="card1">
-        <img src="/png/flor-sem-fundo.png">
-        <div class="content">
-            <p class="title">rosa red puro<br></p>
-        </div>
-    </div>
-</div>
 
-<div class="card">
-    <div class="card2">
-        <img src="/css/png/flor1.jpg">
-        <div class="content">
-            <p class="title">rosa impecável<br></p>
-        </div>
-    </div>
-</div>
-
-<div class="card">
-    <div class="card3">
-        <img src="/css/png/images.jpg">
-        <div class="content">
-            <p class="title">Violeta<br></p>
-        </div>
-    </div>
-</div>
-
-<div class="card">
-    <div class="card4">
-        <img src="/css/png/images%20(1).jpg">
-        <div class="content">
-            <p class="title">pupilas<br></p>
-        </div>
-    </div>
-</div>
-
-<script src="/js/flowerScreen.js"></script>
-
+<body>
+<h1>Flores Disponíveis:</h1>
+<ul>
+    <li th:each="flor : ${flores}">
+        <img th:src="${flor.link}" alt="Imagem da Flor" width="200" height="150">
+        <span th:text="${flor.name}"></span>
+    </li>
+</ul>
+</body>
 </body>
 </html>

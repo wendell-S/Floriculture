@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,9 @@
     <link rel="stylesheet" href="/css/screenPrincipalCss.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-inner">
-            <div class="user-links">
-                <span>Ainda não tem uma conta?</span>
-                <div id="successMessage"></div>
-                <a class="link link-clean" href="/registration">Cadastre-se</a>
-            </div>
-        </div>
-    </header>
-
+<div style="margin-top: 50px;">
+    <h1>Olá, <span th:text="${username}"></span>!, tu não sabes o quão gratificante foi programar isto para você! aproveite</h1>
+</div>
 <div id="app">
     <div class="profile-icon" @click="toggleMenu"> <img src="/css/png/icone.png" alt="icon" height="50px"></div>
     <div class="menu-container" :class="{ 'active': isMenuOpen }" >
