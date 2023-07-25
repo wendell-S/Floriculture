@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu perfil</title>
     <link rel="stylesheet" href="/css/profileScreenCss.css">
+    <link rel="stylesheet" href="/src/main/resources/static/css/profileScreenCss.css">  <!--apagar-->
 </head>
 <body>
     
-        <div id="app">
-            <div class="profile-icon" @click="toggleMenu"> <img src="/css/png/icone.png" alt="icon" height="50px"></div>
+        <div id="app">                                                   <!--apagar  /css/png/icone.png -->
+            <div class="profile-icon" @click="toggleMenu"> <img src="/src/main/resources/static/css/png/icone.png" alt="icon" height="50px"></div>
             <div class="menu-container" :class="{ 'active': isMenuOpen }">
                 <ul>
                     <li @click="redirectTo('/floricultura/mensagem')"><a ><strong>Menu Principal</strong></a></li>
@@ -30,5 +31,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="/js/screenPrincipal.js"></script>
+    <script src="/src/main/resources/static/js/screenPrincipal.js"></script> <!--apagar-->
 </body>
 </html>

@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Floricultura</title>
-    <script th:if="${errorMessage}" src="/js/login.js"></script>
-    <script th:if="${successMessage}" src="/js/login.js"></script>
 </head>
 <body>
 <div class="page-basic-wrapper">
@@ -39,9 +37,7 @@
         </div>
     </div>
 </div>
-<div id="errorMessage" th:if="${errorMessage}" style="display: none;">
-    [[${errorMessage}]]
-</div>
+
 <style>
     body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -72,7 +68,7 @@
 }
 
 .header {
-    background-color: #000000c4;
+    background-color: hsla(0, 0%, 0%, 0.769);
     color: #fff;
     padding: 25px;
     border: 2px solid #000000;
