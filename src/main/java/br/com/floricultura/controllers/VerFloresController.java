@@ -19,9 +19,9 @@ public class VerFloresController {
 
     @GetMapping("/ver-flores")
     public String verFlores(Model model) {
-        List<Flower> flores = flowerService.listarFlores(); // Método para buscar as flores do banco de dados
+        List<Flower> flores = flowerService.listarFlores();
         model.addAttribute("flores", flores);
-        return "flowerScreen"; // Nome da página HTML que irá exibir as flores
+        return "flowerScreen";
     }
 
     @Autowired

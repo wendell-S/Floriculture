@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @EnableWebSecurity
@@ -63,10 +64,15 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers(PUBLIC_MATCHERS).permitAll()
                 .antMatchers(USER_MATCHERS).hasAuthority("USER")
                 .antMatchers(ADMIN_MATCHER).hasAuthority("ADMIN")
+                .antMatchers("/css/**").permitAll()
                 .anyRequest().authenticated()
-                .and().formLogin().loginPage("/floricultura/login").permitAll().defaultSuccessUrl("/floricultura/mensagem", true)
+                .and().formLogin().loginPage("/floricultura/login").permitAll().successHandler(customAuthenticationSuccessHandler())
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/floricultura/logout"))
                 .logoutSuccessUrl("/floricultura/login").permitAll();
+    }
+
+    public AuthenticationSuccessHandler customAuthenticationSuccessHandler() {
+        return new CustomAuthenticationSuccessHandler();
     }
 
 

@@ -1,0 +1,160 @@
+/* registration.css */
+
+body {
+    margin: 0%;
+    background: linear-gradient(to bottom, #FF007D, #FF355E);
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #000000, #b739ca);
+    background-size: 300% 300%;
+    animation: animation 7s infinite ease-in-out;
+}
+
+@keyframes animation {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.header {
+    background-color: #060606dc;
+    padding: 10px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    border-radius: 20px;
+}
+
+.user-links {
+    font-size: 14px;
+    color: antiquewhite;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.form_main {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; /* Para centralizar a div na tela horizontalmente */
+    margin-top: 100px; /* Para adicionar espaço na parte superior */
+}
+
+.form_main::before {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: rgb(209, 193, 255);
+    transform: rotate(45deg);
+    left: -180px;
+    bottom: 30px;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+}
+
+.titu {
+    font-size: 2em;
+    color: #2e2e2e;
+    font-weight: 700;
+    margin: 5px 0 10px 0;
+    z-index: 2;
+}
+
+.dados {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.iconeDeDados {
+    position: absolute;
+    left: 3px;
+}
+
+.botaoDeDados {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    margin: 10px 0;
+    color: black;
+    font-size: .8em;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.inputField:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(199, 114, 255);
+}
+
+.inputField::placeholder {
+    color: rgb(80, 80, 80);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#btnEfetuarCadastrar {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    border: none;
+    background-color: rgb(162, 104, 255);
+    height: 30px;
+    color: white;
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#btnEfetuarCadastrar:hover {
+    background-color: rgb(126, 84, 255);
+}
+
+.forgotLink {
+    z-index: 2;
+    font-size: .7em;
+    font-weight: 500;
+    color: rgb(44, 24, 128);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}

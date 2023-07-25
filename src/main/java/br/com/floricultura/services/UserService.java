@@ -24,6 +24,17 @@ public class UserService {
     }
 
     public void registerUser(UserDTO userRegistrationDTO) {
+        if (userRegistrationDTO.getUsername() == null || userRegistrationDTO.getUsername().isEmpty()
+                || userRegistrationDTO.getPassword() == null || userRegistrationDTO.getPassword().isEmpty()
+                || userRegistrationDTO.getEmail() == null || userRegistrationDTO.getEmail().isEmpty()
+                || userRegistrationDTO.getName() == null || userRegistrationDTO.getName().isEmpty()) {
+            throw new IllegalArgumentException("Todos os campos são obrigatórios.");
+        }
+
+        if (userRegistrationDTO.getUsername().trim().isEmpty() || userRegistrationDTO.getPassword().trim().isEmpty()) {
+            throw new IllegalArgumentException("Nome de usuário e senha inválidos.");
+        }
+
         Role userRole = roleRepository.findByRole("USER");
         if (userRole == null) {
             userRole = new Role("USER");
@@ -33,11 +44,13 @@ public class UserService {
         User user = new User(userRegistrationDTO.getEmail(),
                 passwordEncoder.encode(userRegistrationDTO.getPassword()),
                 userRegistrationDTO.getName(),
-                userRegistrationDTO.getLast_Name(),
-                true,
                 userRegistrationDTO.getUsername());
 
         user.setRoles(Collections.singletonList(userRole));
         userRepository.save(user);
+    }
+
+    public User getUserByUsername(String username) {
+        return userRepository.findByUsername(username);
     }
 }

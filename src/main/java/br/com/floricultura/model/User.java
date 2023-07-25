@@ -3,6 +3,7 @@ package br.com.floricultura.model;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.*;
+
 import java.util.Collection;
 
 @Entity
@@ -22,12 +23,6 @@ public class User {
     @Column(name = "name")
     private String name;
 
-    @Column(name="last_name")
-    private String last_name;
-
-    @Column(name = "enable")
-    private boolean enabled;
-
     @Column(name = "username")
     private String username;
 
@@ -40,12 +35,10 @@ public class User {
 
     }
 
-    public User(String email, String password, String name, String last_name, boolean enabled, String username) {
+    public User(String email, String password, String name, String username) {
         this.email = email;
         this.password = password;
         this.name = name;
-        this.last_name = last_name;
-        this.enabled = enabled;
         this.username = username;
     }
 
@@ -82,21 +75,6 @@ public class User {
         this.name = name;
     }
 
-    public String getLast_name() {
-        return last_name;
-    }
-
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
-    }
-
-    public boolean isEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
-    }
 
     public String getUsername() {
         return username;
@@ -113,4 +91,6 @@ public class User {
     public void setRoles(Collection<Role> roles) {
         this.roles = roles;
     }
+
+
 }

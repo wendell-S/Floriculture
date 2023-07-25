@@ -5,91 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3862d4e1-7614-41e0-9299-8a02e677e1d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/DTO/FlowerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/FlowerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/model/Flower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/repository/FlowerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/services/FlowerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3a846f5713319d9e61354d436a4004870751f847" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4ff0fad27cf671d7a3a2005de798c50c8d95e50e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/540d31c630bd5a9bc786974cb7050cd1ce8697ea" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/707cc28f72c018434af1d6ed0818b9f86938969a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/758adffcc3b95f531f3af4c4066eb9c4baa01491" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/87e040918a36a943b78fe0d6f9bc552c2ac084f1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b2d309a06fe8311cd78c36075d4a518bfc00141" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c5ba4f9bc3a9ae82bc4183c4d9b59d500d7bfac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c8f41ad6ac3922cd7408a5460089c9292c02631" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a83c993d79f64aca3bfa2001de75119ef916222f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bf575945b683c8f46840e681ca2d0037c334af69" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c83ba59e2660afa4e0d1bed6ec0617d681aa6b3f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ced775cdf0d442641ada89842614113582394d34" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d084fae873943b40ec9d7bec82b49493843ebe31" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0fd328b6fadc7798dd327d2d059673eb5175f73" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d958ef7219b8e34c6b90ce16c27d3832eb4e9cfc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe67bcf11d665060c2de74b565a6216d23710bc5" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/security/CustomAuthenticationSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/473e8adb0e351dabe9d0ca9535f59a2f2a664bed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63f38512dca5eeafa25f7447dad6f5d98e278a82" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f4a71d9786d5cc01c5627b25113ec80124ab91e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/a/7aca384fdab61bcd252bb15f0b7e3dd8c45ba0ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88589f4fb3da00d0767897f5a7c59893d5ccd9dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bf04b8ed0e6290baa6d716e0c8ff5ee96a798d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8cde825676525deb2bfa28109e43404862294480" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95173ba115243543706b17415289c5b6d8eed1c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95b5a579d6e2eb772bf49808982a9acaba4ec578" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f796bef2e1a2b1fb414609150c8153bccbf22561" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/a/3a846f5713319d9e61354d436a4004870751f847" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/f/4ff0fad27cf671d7a3a2005de798c50c8d95e50e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/4/540d31c630bd5a9bc786974cb7050cd1ce8697ea" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/0/707cc28f72c018434af1d6ed0818b9f86938969a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/5/758adffcc3b95f531f3af4c4066eb9c4baa01491" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/7/87e040918a36a943b78fe0d6f9bc552c2ac084f1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/b/8b2d309a06fe8311cd78c36075d4a518bfc00141" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/c/9c5ba4f9bc3a9ae82bc4183c4d9b59d500d7bfac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/c/9c8f41ad6ac3922cd7408a5460089c9292c02631" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/8/a83c993d79f64aca3bfa2001de75119ef916222f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/f/bf575945b683c8f46840e681ca2d0037c334af69" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/8/c83ba59e2660afa4e0d1bed6ec0617d681aa6b3f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/e/ced775cdf0d442641ada89842614113582394d34" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/0/d084fae873943b40ec9d7bec82b49493843ebe31" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/0/d0fd328b6fadc7798dd327d2d059673eb5175f73" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/9/d958ef7219b8e34c6b90ce16c27d3832eb4e9cfc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/e/fe67bcf11d665060c2de74b565a6216d23710bc5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/7/473e8adb0e351dabe9d0ca9535f59a2f2a664bed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/3/63f38512dca5eeafa25f7447dad6f5d98e278a82" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/f/6f4a71d9786d5cc01c5627b25113ec80124ab91e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/a/7aca384fdab61bcd252bb15f0b7e3dd8c45ba0ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/88589f4fb3da00d0767897f5a7c59893d5ccd9dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/b/8bf04b8ed0e6290baa6d716e0c8ff5ee96a798d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/c/8cde825676525deb2bfa28109e43404862294480" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/5/95173ba115243543706b17415289c5b6d8eed1c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/5/95b5a579d6e2eb772bf49808982a9acaba4ec578" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/7/f796bef2e1a2b1fb414609150c8153bccbf22561" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/AdmSendFlowerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/PerfilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/PerfilController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/VerFloresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/VerFloresController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/screenPrincipalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/controllers/screenPrincipalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/floricultura/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/floricultura/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/floricultura/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/floricultura/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/loginScreenCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/loginScreenCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/flowerScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/flowerScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/screenPrincipal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/screenPrincipal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adminSendFlower.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/aboutUsCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/aboutUs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/flowerScreenCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/flowerScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/loginScreenCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/loginScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/messageScreenCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/messageScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/png/flor-sem-fundo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/png/flor1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/png/images (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/png/images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/png/registrationCss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/profileScreenCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/profileScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/registrationCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/screenPrincipalCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/screenPrincipal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/aboutUs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/flowerScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/flowerScreen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/messageScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/messageScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profileScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profileScreen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/screenPrincipal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/screenPrincipal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/DTO/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/DTO/UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/SpringSecurityApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/SpringSecurityApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/AdmSendFlowerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/MandarFlorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/MandarFlorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/PerfilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/PerfilController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/SobreNosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/SobreNosController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/VerFloresController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/VerFloresController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/screenPrincipalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/controllers/screenPrincipalController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/model/Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/repository/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/repository/RoleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/security/SSUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/security/SSUserDetailsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/security/SecurityConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/floricultura/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/floricultura/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/loginScreenCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/loginScreenCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/flowerScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/flowerScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/screenPrincipal.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/screenPrincipal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/adminSendFlower.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/aboutUsCss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/flowerScreenCss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/loginScreenCss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/messageScreenCss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/profileScreenCss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/registrationCss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/screenPrincipalCss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/aboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/flowerScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/flowerScreen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/messageScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/messageScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/profileScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profileScreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/screenPrincipal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/screenPrincipal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +115,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/igorc/Downloads/Floriculture&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/igorc/IdeaProjects/Floriculture&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -156,6 +140,7 @@
       <recent name="C:\Users\igorc\IdeaProjects\Floriculture-Java11\src\main\resources\static\css\png" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.floricultura.security" />
       <recent name="com.floricultura.controller" />
     </key>
   </component>

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class screenPrincipalController {
     @GetMapping("/mensagem")
     public String screenPrincipal(Authentication authentication, Model model) {
-        String username = authentication.getName(); // Obtém o nome do usuário autenticado
+        String username = authentication.getName();
         model.addAttribute("username", username);
         return "screenPrincipal";
     }

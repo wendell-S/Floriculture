@@ -193,3 +193,21 @@ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
   .menu-container li a:hover {
       background-color: #f0f0f0;
   }
+
+   .flower-block {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+
+      /* Ajuste a largura de cada bloco de flor para ocupar 33% da largura total */
+      .flower-block li {
+          width: 33%;
+          padding: 10px;
+          box-sizing: border-box;
+      }
+
+      /* Ajuste o espaçamento entre as linhas de flores */
+      .flower-block ul {
+          margin-bottom: 20px;
+      }

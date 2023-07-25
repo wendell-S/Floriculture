@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="/css/flowerScreenCss.css"> 
-    <link rel="stylesheet" href="/src/main/resources/static/css/flowerScreenCss.css">
+    <link rel="stylesheet" href="/css/flowerScreen.css">
 
 </head>
 <body>
@@ -30,11 +29,14 @@
 
 <body>
 <h1>Flores Disponíveis:</h1>
-<ul>
-    <li th:each="flor : ${flores}">
+<ul class="flower-block" th:with="index=0">
+    <li th:each="flor : ${flores}" th:with="index=${index + 1}">
         <img th:src="${flor.link}" alt="Imagem da Flor" width="200" height="150">
         <span th:text="${flor.name}"></span>
     </li>
+
+    <!-- Use o index para verificar quando criar uma nova linha (bloco) de flores -->
+    <li th:if="${index % 3 == 0}" style="width: 100%; visibility: hidden;"></li>
 </ul>
 </body>
 </body>
