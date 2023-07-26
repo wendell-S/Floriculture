@@ -239,3 +239,23 @@ body {
     background-color: #f0f0f0;
 }
 
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    opacity: 0;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}

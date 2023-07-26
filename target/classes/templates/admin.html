@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Flores</title>
+    <link rel="stylesheet" href="/css/admin.css">
     <script src="/js/admin.js"></script>
+
 </head>
 <body>
 <h1>Formulário de Flores</h1>
@@ -23,11 +25,11 @@
     <button type="submit">Enviar</button>
 </form>
 
-<div th:if="${successMessage}" id="successPopup" style="background-color: green; color: white; padding: 10px;">
+<div th:if="${successMessage}" class="popup success" id="successPopup">
     [[${successMessage}]]
 </div>
 
-<div th:if="${errorMessage}" id="errorPopup" style="background-color: red; color: white; padding: 10px;">
+<div th:if="${errorMessage}" class="popup error" id="errorPopup">
     [[${errorMessage}]]
 </div>
 </body>

@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface FlowerRepository extends CrudRepository<Flower, Long> {
    Flower findByName(String name) ;
+
+    Flower findByLink(String link);
 }

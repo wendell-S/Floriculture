@@ -1,28 +1,20 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-    var errorMessage = document.getElementById('errorMessage').innerText;
-    if (errorMessage) {
-        showPopup(errorMessage);
-    }
-});
+function hidePopup() {
+            const successPopup = document.getElementById('successPopup');
+            const errorPopup = document.getElementById('errorPopup');
 
-function showPopup(errorMessage) {
-    var popup = document.createElement('div');
-    popup.className = 'popup';
-    popup.innerText = errorMessage;
-    document.body.appendChild(popup);
-    setTimeout(function() {
-        popup.style.display = 'none';
-    }, 3000);
-}
+            if (successPopup) {
+                successPopup.style.opacity = 1;
+                setTimeout(function() {
+                    successPopup.style.opacity = 0;
+                }, 2000);
+            }
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    const successMessage = "[[${successMessage}]]";
-    if (successMessage) {
-        const successMessageElement = document.getElementById("successMessage");
-        successMessageElement.innerText = successMessage;
-        successMessageElement.style.display = "block";
-        setTimeout(function() {
-            successMessageElement.style.display = "none";
-        }, 3000);
-    }
-});
+            if (errorPopup) {
+                errorPopup.style.opacity = 1;
+                setTimeout(function() {
+                    errorPopup.style.opacity = 0;
+                }, 2000);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", hidePopup);

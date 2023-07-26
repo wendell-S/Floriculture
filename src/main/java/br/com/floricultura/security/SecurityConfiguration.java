@@ -23,7 +23,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     }
 
     @Autowired
-    private SSUserDetailsService userDetailsService;
+   private SSUserDetailsService userDetailsService;
 
     @Autowired
     private UserRepository userRepository;
@@ -65,8 +65,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers(USER_MATCHERS).hasAuthority("USER")
                 .antMatchers(ADMIN_MATCHER).hasAuthority("ADMIN")
                 .antMatchers("/css/**").permitAll()
+                .antMatchers("/js/**").permitAll()
                 .anyRequest().authenticated()
-                .and().formLogin().loginPage("/floricultura/login").permitAll().successHandler(customAuthenticationSuccessHandler())
+                .and().formLogin().loginPage("/floricultura/login").permitAll()
+                .failureUrl("/floricultura/login").successHandler(customAuthenticationSuccessHandler())
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/floricultura/logout"))
                 .logoutSuccessUrl("/floricultura/login").permitAll();
     }

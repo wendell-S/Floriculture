@@ -18,7 +18,7 @@ public class Flower {
     @NotBlank
 
     private String name;
-    @Column(name = "link")
+    @Column(name = "link", length = 255)
     @NotNull
     @NotEmpty
     @NotBlank

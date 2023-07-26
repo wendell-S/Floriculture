@@ -34,13 +34,15 @@ public class FlowerController {
     @PostMapping("/admin")
     public RedirectView registerUser(@Valid @ModelAttribute FlowerDTO flowerDTO,
                                      RedirectAttributes redirectAttributes) {
-        Flower flower = flowerRepository.findByName(flowerDTO.getName());
+        Flower flowerName = flowerRepository.findByName(flowerDTO.getName());
+        Flower flowerLink = flowerRepository.findByLink(flowerDTO.getLink());
 
-        if (flower == null) {
+
+        if (flowerName == null && flowerLink == null) {
             flowerService.addFlower(flowerDTO);
             redirectAttributes.addFlashAttribute("successMessage", "flor cadastrada com sucesso!");
         } else {
-            redirectAttributes.addFlashAttribute("errorMessage", "Já existe uma conta com este usuário!!");
+            redirectAttributes.addFlashAttribute("errorMessage", "Já existe uma flor com este nome/link!!");
             return new RedirectView("/floricultura/admin");
         }
 

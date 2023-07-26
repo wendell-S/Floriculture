@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/registration.css" th:href="@{/css/registration.css}">
+    <script src="/js/registration.js"></script>
 </head>
 <body>
 <div class="page-basic-wrapper">
@@ -42,6 +43,13 @@
 
         <button id="btnEfetuarCadastrar" type="submit">Cadastrar</button>
     </form>
+</div>
+<div th:if="${successMessage}" class="popup success" id="successPopup">
+    [[${successMessage}]]
+</div>
+
+<div th:if="${errorMessage}" class="popup error" id="errorPopup">
+    [[${errorMessage}]]
 </div>
 </body>
 </html>

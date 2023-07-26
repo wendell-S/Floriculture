@@ -32,16 +32,19 @@ public class RegistrationController {
     @PostMapping("/registration")
     public RedirectView registerUser(@Valid @ModelAttribute UserDTO userRegistrationDTO,
                                      RedirectAttributes redirectAttributes) {
-        User user = userRepository.findByUsername(userRegistrationDTO.getUsername());
+        User userUsername = userRepository.findByUsername(userRegistrationDTO.getUsername());
+        User userEmail = userRepository.findByEmail(userRegistrationDTO.getEmail());
+        User userName = userRepository.findByName(userRegistrationDTO.getName());
 
-        if (user == null) {
+
+        if (userUsername == null && userEmail == null && userName == null) {
             userService.registerUser(userRegistrationDTO);
             redirectAttributes.addFlashAttribute("successMessage", "Conta cadastrada com sucesso!");
+            return new RedirectView("/floricultura/registration");
         } else {
-            redirectAttributes.addFlashAttribute("errorMessage", "Já existe uma conta com este usuário!!");
+            redirectAttributes.addFlashAttribute("errorMessage", "Já existe uma conta com alguma dessas credenciais!!!");
             return new RedirectView("/floricultura/registration");
         }
 
-        return new RedirectView("/floricultura/login");
     }
 }

@@ -1,13 +1,20 @@
-var successPopup = document.getElementById("successPopup");
-if (successPopup) {
-    setTimeout(function() {
-        successPopup.style.display = "none";
-    }, 2000);
-}
+function hidePopup() {
+            const successPopup = document.getElementById('successPopup');
+            const errorPopup = document.getElementById('errorPopup');
 
-var errorPopup = document.getElementById("errorPopup");
-if (errorPopup) {
-    setTimeout(function() {
-        errorPopup.style.display = "none";
-    }, 2000);
-}
+            if (successPopup) {
+                successPopup.style.opacity = 1;
+                setTimeout(function() {
+                    successPopup.style.opacity = 0;
+                }, 2000);
+            }
+
+            if (errorPopup) {
+                errorPopup.style.opacity = 1;
+                setTimeout(function() {
+                    errorPopup.style.opacity = 0;
+                }, 2000);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", hidePopup);
