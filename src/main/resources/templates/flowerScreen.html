@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="/css/flowerScreen.css">
+    <link rel="stylesheet" href="/src/main/resources/static/css/flowerScreen.css">
 
 </head>
 <body>
@@ -28,6 +29,7 @@
 
 
 <body>
+<div class="catalago">
 <h1>Flores Disponíveis:</h1>
 <ul class="flower-block" th:with="index=0">
     <li th:each="flor : ${flores}" th:with="index=${index + 1}">
@@ -38,6 +40,7 @@
     <!-- Use o index para verificar quando criar uma nova linha (bloco) de flores -->
     <li th:if="${index % 3 == 0}" style="width: 100%; visibility: hidden;"></li>
 </ul>
+</div>
 </body>
 </body>
 </html>

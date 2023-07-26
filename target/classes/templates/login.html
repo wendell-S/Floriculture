@@ -4,38 +4,47 @@
     <meta charset="UTF-8">
     <title>Login Floricultura</title>
     <link rel="stylesheet" href="/css/loginScreen.css" th:href="@{/css/loginScreen.css}">
-
+    <link rel="stylesheet" href="/src/main/resources/static/css/loginScreen.css">
 </head>
 <body>
 <div class="page-basic-wrapper">
     <header class="header">
         <div class="header-inner">
+            <div class="logo-container">
+               <!-- <img src="/css/png/Florecu.jpg" alt="logo" height="70px">-->
+               <img src="/src/main/resources/static/css/png/Florecu.jpg" alt="logo" height="70px">
+            </div>
             <div class="user-links">
-                <span>Ainda não tem uma conta?</span>
-                <a class="link link-clean" href="/floricultura/registration">Cadastre-se</a>
+                <span><strong>Ainda não tem uma conta?</strong></span>
+                <a class="link link-clean" href="/floricultura/registration"><strong>Cadastre-se</strong></a>
             </div>
         </div>
     </header>
+
     <div class="page-basic-content">
         <div class="box-content">
-            <h1>Login Floricultura</h1>
+            <p class="titu"><strong>Login Floricultura</strong></p>
+
             <form th:action="@{/floricultura/login}" method="post">
+
                 <div class="input-text-container">
-                    <label for="username"><input type="text" id="username" name="username" placeholder="Digite seu nome de USUARIO" required/></label>
+                    <label for="username"><input class="botaoDeDados" type="text" id="username" name="username" placeholder="Nome de usuario" required/></label>
                 </div>
                 <div class="input-text-container">
-                    <label for="password"><input type="password" id="password" name="password" placeholder="Digite sua senha" required/></label>
+                    <label for="password"><input class="botaoDeDados" type="password" id="password" name="password" placeholder="Digite sua senha" required/></label>
                 </div>
-                <button class="btn btn-big btn-green" type="submit">Entrar</button>
+                <button  id="btnEfetuarCadastrar" type="submit">Entrar</button> <!-- ateraçao na class "btn btn-big btn-green" para "btnEfetuarCadastrar"-->
             </form>
+
             <div class="login-options">
                 <div class="checkbox-container">
                     <label for="mantenhaMeLogado">
                         <input id="mantenhaMeLogado" type="checkbox" checked>
-                        Mantenha-me logado.
+                        <p class="chek">Mantenha-me logado.</p>
                     </label>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
