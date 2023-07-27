@@ -1,6 +1,6 @@
 <p align="center">Floricultura - Repositório do GitHub</p>
 <p align="center">
-  <img src="https://your-image-url.com/floricultura-logo.png" alt="Logo da Floricultura">
+  <img src="https://static.vecteezy.com/system/resources/previews/000/619/918/original/lotus-flower-logo-and-symbols-vector-template.jpg" alt="Logo da Floricultura">
 </p>
 <p align="center">🌺 Bem-vindo ao Repositório da Floricultura! 🌺</p>
 Descrição do Sistema
