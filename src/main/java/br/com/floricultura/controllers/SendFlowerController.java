@@ -81,8 +81,8 @@ public class SendFlowerController {
             properties.put("mail.smtp.starttls.enable", "true");
             properties.put("mail.smtp.ssl.trust", "*");
 
-            String username = "botinterprise@gmail.com";
-            String password = "mbvfuzwpnutdkbxe";
+            String username = ""; //coloque aqui seu email
+            String password = ""; //coloque aqui a sua senha conforme o video fornecido no README.md
 
             Session session = Session.getInstance(properties, new Authenticator() {
                 @Override
