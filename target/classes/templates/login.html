@@ -12,7 +12,7 @@
         <div class="header-inner">
             <div class="logo-container">
                <img src="/css/png/Florecu.jpg" alt="logo" height="70px">
-             
+
             </div>
             <div class="user-links">
                 <span><strong>Ainda não tem uma conta?</strong></span>
@@ -20,7 +20,10 @@
             </div>
         </div>
     </header>
-
+    <p th:if="${param.error}" class="error-message show-and-hide" data-timeout="5000">
+        Nome de usuário ou senha inválida!
+        Verifique suas credenciais e tente novamente.
+    </p>
     <div class="page-basic-content">
         <div class="box-content">
             <p class="titu"><strong>Login Floricultura</strong></p>
@@ -33,9 +36,8 @@
                 <div class="input-text-container">
                     <label for="password"><input class="botaoDeDados" type="password" id="password" name="password" placeholder="Digite sua senha" required/></label>
                 </div>
-                <button  id="btnEfetuarCadastrar" type="submit">Entrar</button> <!-- ateraçao na class "btn btn-big btn-green" para "btnEfetuarCadastrar"-->
+                <button  id="btnEfetuarCadastrar" type="submit">Entrar</button>
             </form>
-
             <div class="login-options">
                 <div class="checkbox-container">
                     <label for="mantenhaMeLogado">

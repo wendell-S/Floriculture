@@ -7,7 +7,6 @@ import br.com.floricultura.repository.RoleRepository;
 import br.com.floricultura.repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 import java.util.Collections;
 
 @Service
@@ -17,6 +16,7 @@ public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
+
     public UserService(RoleRepository roleRepository, UserRepository userRepository, PasswordEncoder passwordEncoder) {
         this.roleRepository = roleRepository;
         this.userRepository = userRepository;
@@ -24,16 +24,7 @@ public class UserService {
     }
 
     public void registerUser(UserDTO userRegistrationDTO) {
-        if (userRegistrationDTO.getUsername() == null || userRegistrationDTO.getUsername().isEmpty()
-                || userRegistrationDTO.getPassword() == null || userRegistrationDTO.getPassword().isEmpty()
-                || userRegistrationDTO.getEmail() == null || userRegistrationDTO.getEmail().isEmpty()
-                || userRegistrationDTO.getName() == null || userRegistrationDTO.getName().isEmpty()) {
-            throw new IllegalArgumentException("Todos os campos são obrigatórios.");
-        }
-
-        if (userRegistrationDTO.getUsername().trim().isEmpty() || userRegistrationDTO.getPassword().trim().isEmpty()) {
-            throw new IllegalArgumentException("Nome de usuário e senha inválidos.");
-        }
+        validateUserDTO(userRegistrationDTO);
 
         Role userRole = roleRepository.findByRole("USER");
         if (userRole == null) {
@@ -41,10 +32,12 @@ public class UserService {
             roleRepository.save(userRole);
         }
 
-        User user = new User(userRegistrationDTO.getEmail(),
+        User user = new User(
+                userRegistrationDTO.getEmail(),
                 passwordEncoder.encode(userRegistrationDTO.getPassword()),
                 userRegistrationDTO.getName(),
-                userRegistrationDTO.getUsername());
+                userRegistrationDTO.getUsername()
+        );
 
         user.setRoles(Collections.singletonList(userRole));
         userRepository.save(user);
@@ -53,4 +46,42 @@ public class UserService {
     public User getUserByUsername(String username) {
         return userRepository.findByUsername(username);
     }
+
+    public boolean validateUserDTO(UserDTO userDTO) {
+        return isEmailValid(userDTO.getEmail()) && isNameValid(userDTO.getName()) && isUsernameValid(userDTO.getUsername());
+    }
+
+    public boolean isEmailValid(String email) {
+        return email != null && !email.trim().isEmpty() && email.matches("^[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+
+    public boolean isNameValid(String name) {
+        return name != null && !name.isEmpty();
+    }
+
+    public boolean isUsernameValid(String username) {
+        return username != null && !username.isEmpty();
+    }
+
+    public User getUserIfExists(String username, String email, String name) {
+        User userByUsername = userRepository.findByUsername(username);
+        User userByEmail = userRepository.findByEmail(email);
+        User userByName = userRepository.findByName(name);
+
+        if (userByUsername != null) {
+            return userByUsername;
+        }
+
+        if (userByEmail != null) {
+            return userByEmail;
+        }
+
+        if (userByName != null) {
+            return userByName;
+        }
+
+        return null;
+    }
+
 }

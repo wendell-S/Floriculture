@@ -21,30 +21,23 @@ public class RegistrationController {
         return new ModelAndView("registration");
     }
     private final UserService userService;
-    private UserRepository userRepository;
 
     @Autowired
     public RegistrationController(UserService userService, UserRepository userRepository) {
         this.userService = userService;
-        this.userRepository = userRepository;
     }
 
     @PostMapping("/registration")
-    public RedirectView registerUser(@Valid @ModelAttribute UserDTO userRegistrationDTO,
+    public RedirectView registerUser(@Valid @ModelAttribute UserDTO userDTO,
                                      RedirectAttributes redirectAttributes) {
-        User userUsername = userRepository.findByUsername(userRegistrationDTO.getUsername());
-        User userEmail = userRepository.findByEmail(userRegistrationDTO.getEmail());
-        User userName = userRepository.findByName(userRegistrationDTO.getName());
 
-
-        if (userUsername == null && userEmail == null && userName == null) {
-            userService.registerUser(userRegistrationDTO);
+        if (userService.getUserIfExists(userDTO.getUsername(), userDTO.getEmail(), userDTO.getName()) == null && userService.validateUserDTO(userDTO) == true) {
+            userService.registerUser(userDTO);
             redirectAttributes.addFlashAttribute("successMessage", "Conta cadastrada com sucesso!");
-            return new RedirectView("/floricultura/registration");
         } else {
             redirectAttributes.addFlashAttribute("errorMessage", "Já existe uma conta com alguma dessas credenciais!!!");
-            return new RedirectView("/floricultura/registration");
         }
+        return new RedirectView("/floricultura/registration");
 
     }
 }

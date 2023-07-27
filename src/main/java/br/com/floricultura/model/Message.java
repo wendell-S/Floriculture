@@ -7,6 +7,8 @@ public class Message {
     String assunto;
     String mensagem;
 
+    String flower;
+
     public String getEmail() {
         return email;
     }
@@ -29,5 +31,13 @@ public class Message {
 
     public void setMensagem(String mensagem) {
         this.mensagem = mensagem;
+    }
+
+    public String getFlower() {
+        return flower;
+    }
+
+    public void setFlower(String flower) {
+        this.flower = flower;
     }
 }

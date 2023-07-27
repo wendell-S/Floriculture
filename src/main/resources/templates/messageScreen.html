@@ -16,7 +16,7 @@
 
         <ul>
             <li @click="redirectTo('/floricultura/mensagem')"><a ><strong>Menu Principal</strong></a></li>
-            <li @click="redirectTo('/floricultura/mandar-flor')"><a ><strong>Mandar um email</strong></a></li>
+            <li @click="redirectTo('/floricultura/ver-flores')"><a ><strong>Ver flores</strong></a></li>
             <li @click="redirectTo('/floricultura/perfil')"><a ><strong>informações do perfil</strong></a></li>
             <li @click="redirectTo('/floricultura/sobre-Nos')"><a ><strong>Sobre nós</strong></a></li>
             <li @click="redirectTo('/floricultura/logout')"><a ><strong>Sair</strong></a></li>
@@ -41,6 +41,10 @@
         <div>
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" required></textarea>
+        </div>
+        <div>
+            <label for="flower" placeholder="digite aqui o nome da flor que você deseja enviar:">Digite aqui o nome da flor:</label>
+            <input type="text" id="flower" name="flower" required>
         </div>
         <button id="enviarBtn" @click="enviarMensagem">Enviar</button>
         <footer></footer>

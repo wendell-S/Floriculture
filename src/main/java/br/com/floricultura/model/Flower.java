@@ -52,6 +52,9 @@ public class Flower {
         this.name = name;
         this.link = link;
     }
+    public Flower(String name){
+        this.name = name;
+    }
 
     public Flower(){
 

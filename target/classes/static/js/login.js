@@ -1,20 +1,16 @@
-function hidePopup() {
-            const successPopup = document.getElementById('successPopup');
-            const errorPopup = document.getElementById('errorPopup');
 
-            if (successPopup) {
-                successPopup.style.opacity = 1;
-                setTimeout(function() {
-                    successPopup.style.opacity = 0;
-                }, 2000);
-            }
+function showAndHidePopup(element) {
+    const timeout = parseInt(element.attr('data-timeout')) || 5000;
+    element.fadeIn('fast', function() {
+      setTimeout(function() {
+        element.fadeOut('fast');
+      }, timeout);
+    });
+  }
 
-            if (errorPopup) {
-                errorPopup.style.opacity = 1;
-                setTimeout(function() {
-                    errorPopup.style.opacity = 0;
-                }, 2000);
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", hidePopup);
+  $(document).ready(function() {
+    const errorPopup = $('.show-and-hide');
+    if (errorPopup.length > 0) {
+      showAndHidePopup(errorPopup);
+    }
+  });

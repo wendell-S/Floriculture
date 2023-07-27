@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    var enviarFlorBtn = document.getElementById('enviar-flor-btn');
+    let enviarFlorBtn = document.getElementById('enviar-flor-btn');
 
     enviarFlorBtn.addEventListener('click', function() {
         window.location.href = 'messageScreen.html';

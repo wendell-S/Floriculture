@@ -29,14 +29,14 @@ public class SSUserDetailsService implements UserDetailsService {
         try {
             User user = userRepository.findByUsername(username);
             if(user==null){
-                return null;
+                throw new UsernameNotFoundException("Nome de usuário inválido!");
             }
             return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), getAuthories(user));
         }
 
         catch (Exception e)
         {
-         throw new UsernameNotFoundException("User not found!");
+            throw new UsernameNotFoundException("User not found!");
         }
     }
 

@@ -17,17 +17,23 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
+
+    public SecurityConfiguration(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
     @Bean
     public BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
 
     @Autowired
-   private SSUserDetailsService userDetailsService;
+    private SSUserDetailsService userDetailsService;
 
     @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
+    @Override
     @Bean
     public UserDetailsService userDetailsServiceBean(){
         return new SSUserDetailsService(userRepository);
@@ -68,7 +74,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/js/**").permitAll()
                 .anyRequest().authenticated()
                 .and().formLogin().loginPage("/floricultura/login").permitAll()
-                .failureUrl("/floricultura/login").successHandler(customAuthenticationSuccessHandler())
+                .failureUrl("/floricultura/login?error=true").successHandler(customAuthenticationSuccessHandler())
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/floricultura/logout"))
                 .logoutSuccessUrl("/floricultura/login").permitAll();
     }
