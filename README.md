@@ -3,7 +3,7 @@
 </p>
 <p align="center">🌺 Bem-vindo ao Repositório da Floricultura! 🌺</p>
 Descrição do Sistema
-O projeto Floricultura é uma aplicação web que oferece uma experiência encantadora no mundo das flores. O sistema possibilita que os usuários explorem uma vasta coleção de flores disponíveis na floricultura, enviem lindas flores para seus entes queridos através de emails personalizados e acessem funcionalidades personalizadas conforme o perfil de cada usuário. Além disso, o sistema apresenta informações detalhadas sobre a floricultura, sua equipe dedicada e fornece uma forma rápida e fácil para entrar em contato.
+O projeto Floricultura é uma aplicação web que oferece uma experiência de envio de emails. O sistema possibilita que os usuários explorem uma vasta coleção de flores disponíveis na floricultura, enviem lindas flores para seus entes queridos através de emails personalizados e acessem funcionalidades personalizadas conforme o perfil de cada usuário. Além disso, o sistema apresenta informações detalhadas sobre a floricultura, sua equipe dedicada e fornece uma forma rápida e fácil para entrar em contato.
 
 Ferramentas Utilizadas
 O projeto Floricultura foi desenvolvido com uma combinação poderosa de tecnologias de ponta para oferecer uma experiência única aos usuários. Algumas das ferramentas principais utilizadas neste projeto incluem:
