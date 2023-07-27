@@ -4,9 +4,9 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 120px;
     font-family: Arial, sans-serif;
-    background: linear-gradient(90deg, #000000, #732e91);
+    background: linear-gradient(90deg, #3cf1f7, #ff2af8);
     background-size: 300% 300%;
     animation: animation 7s infinite ease-in-out;
 }
@@ -188,7 +188,7 @@ button {
 
 
 .profile-icon img {
-    background-image: url('/src/main/resources/static/css/tarde.png');
+    
     position: fixed;
     top: 20px;
     right: 20px;
@@ -230,4 +230,76 @@ button {
 
 .menu-container li a:hover {
     background-color: #f0f0f0;
+}
+
+/*header principal */
+header {
+  background-color: #000000cc;
+  color: #fff;
+  padding: 10px;
+  position: fixed; /*header no topo */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; 
+  border: 2px solid #000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Define uma largura máxima para o conteúdo do header */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+
+/* Estilos para o perfil */
+
+
+
+.container {
+  color: #cacaca;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000c7;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fbfeff;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+span {
+  font-weight: bold;
+  color: #ffd000;
+}
+
+/* Estilo para o nome do usuário */
+.name {
+  font-size: 24px;
+  color: #f8e306;
+}
+
+/* Estilo para o email */
+.email {
+  color: #ffdd00;
+}
+
+/* Estilo para a senha */
+.password {
+  color: #ffea00;
 }

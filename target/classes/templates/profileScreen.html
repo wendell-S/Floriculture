@@ -5,37 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu perfil</title>
     <link rel="stylesheet" href="/css/profileScreen.css">
+    <link rel="stylesheet" href="/src/main/resources/static/css/profileScreen.css">
 </head>
 <body>
+    <header>
+        <div class="header-inner">
     
-        <div id="app">                                                   <!--apagar  /css/png/icone.png -->
-            <div class="profile-icon" @click="toggleMenu"> <img src="/css/png/icone.png" alt="icon" height="50px"></div>
-            <div class="menu-container" :class="{ 'active': isMenuOpen }">
-                <ul>
-                    <li @click="redirectTo('/floricultura/mensagem')"><a ><strong>Menu Principal</strong></a></li>
-                    <li @click="redirectTo('/floricultura/mandar-flor')"><a ><strong>Mandar um email</strong></a></li>
-                    <li @click="redirectTo('/floricultura/ver-flores')"><a ><strong>Ver Flores</strong></a></li>
-                    <li @click="redirectTo('/floricultura/sobre-Nos')"><a ><strong>Sobre nós</strong></a></li>
-                    <li @click="redirectTo('/floricultura/logout')"><a ><strong>Sair</strong></a></li>
-                </ul>
+            <div class="logo-container">
+            <img src="/css/png/Florecu.jpg" alt="logo" height="70px">
+            </div>
+    
+            <div id="app">
+    
+                <div class="profile-icon" @click="toggleMenu"> <img src="/css/png/icone.png" alt="icon" height="50px"></div>
+    
+                <div class="menu-container" :class="{ 'active': isMenuOpen }" >
+    
+                    <ul>
+                        <li @click="redirectTo('/floricultura/mensagem')"><a ><strong>Menu Principal</strong></a></li>
+                        <li @click="redirectTo('/floricultura/mandar-flor')"><a ><strong>Mandar um email</strong></a></li>
+                        <li @click="redirectTo('/floricultura/ver-flores')"><a ><strong>Ver Flores</strong></a></li>
+                        <li @click="redirectTo('/floricultura/perfil')"><a ><strong>informações do perfil</strong></a></li>
+                        <li @click="redirectTo('/floricultura/logout')"><a ><strong>Sair</strong></a></li>
+    
+                    </ul>
+                </div>
             </div>
         </div>
-    
+    </header>
         
 
-    <section class="container">
+    <section class="cont">
+
+        <div class="container">
+       
+            <h1>Bem-vindo ao perfil, <span th:text="${username}">usuário</span>!</h1>
+            <p>Nome: <span th:text="${name}">Nome do usuário</span></p>
+            <p>Nome de Usuário: <span th:text="${username}">usuário</span></p>
+            <p>Email: <span th:text="${email}">email</span></p>
+            <p>Password: <span>não podemos mostrar! :(</span></p>
+
+     
+        </div>
+        
+
 
     </section>
-        <body>
-        <h1>Bem-vindo ao perfil, <span th:text="${username}">usuário</span>!</h1>
-        <p>Nome: <span th:text="${name}">Nome do usuário</span></p>
-        <p>Nome de Usuário: <span th:text="${username}">usuário</span></p>
-        <p>Email: <span th:text="${email}">email</span></p>
-        <p>Password: <span>não podemos mostrar! :(</span></p>
-
-
-        </body>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="/js/screenPrincipal.js"></script>
 </body>
