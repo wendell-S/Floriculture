@@ -238,3 +238,22 @@ body {
 .menu-container li a:hover {
     background-color: #f0f0f0;
 }
+   /* texto */
+
+.container {
+  margin: 0%;
+
+}
+
+.titu {
+z-index: 5;
+color: #f0f0f0;
+}
+
+.sobre {
+  background-color: #000;
+  color: #f0f0f0;
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 5;
+}
