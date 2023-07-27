@@ -26,7 +26,7 @@ Bibliotecas Auxiliares: Lombok, Hibernate Validator
 
 <strong>INSTALAÇÃO:</strong> 
 
-Acesse a classe SendFlowerController e anexe ao sistema um email e a senha que deve seguir o padrão mostrado no vídeo abaixo. Para mais detalhes, confira este link de ajuda.
+Acesse a classe SendFlowerController e anexe ao sistema um email e a senha que deve seguir o padrão mostrado no vídeo abaixo.(configuração do gmail) Para mais detalhes, confira este link de ajuda: https://youtu.be/bK5j-GDhq8M
 
 Coloque as credenciais do banco de dados MySQL no arquivo application.properties.
 
